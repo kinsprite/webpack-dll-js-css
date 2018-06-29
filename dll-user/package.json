@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+  },
+  "devDependencies": {
+    "jquery": "3.2.1",
+    "webpack": "^4.13.0",
+	"webpack-cli": "^3.0.8"
+  },
+  "scripts": {
+    "start": "webpack --config webpack.config.js"
+  }
+}
