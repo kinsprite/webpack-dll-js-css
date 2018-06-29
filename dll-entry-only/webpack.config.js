@@ -38,8 +38,9 @@ module.exports = {
 		new webpack.DllPlugin({
 			path: path.join(__dirname, "dist", "[name]-manifest.json"),
 			name: "[name]_[chunkhash]",
-			// entryOnly: true
+			entryOnly: true
 		}),
+		new webpack.HashedModuleIdsPlugin(),
 		new ManifestPlugin()
 	]
 };

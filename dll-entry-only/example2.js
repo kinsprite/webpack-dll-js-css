@@ -1,6 +1,7 @@
 export default 10;
 
-export function myFunc() {
-    import('./async-d2.css');
-    import('./async-d2');
+export async function myFunc() {
+   await import('./async-d2.css');
+   const myF = await import('./async-d2');
+   myF();
 }
